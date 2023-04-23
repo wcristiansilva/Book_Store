@@ -9,6 +9,10 @@ gem 'rails', '~> 7.0.4', '>= 7.0.4.3'
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
 
+gem 'webpacker'
+
+gem 'simple_form'
+
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 1.4.6'
 
@@ -17,6 +21,9 @@ gem 'puma', '~> 5.0'
 
 # Bundle and transpile JavaScript [https://github.com/rails/jsbundling-rails]
 gem 'jsbundling-rails'
+
+# Gem devise 
+gem 'devise'
 
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem 'turbo-rails'
