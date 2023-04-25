@@ -2,4 +2,4 @@ web: unset PORT && bin/rails server
 js: yarn build --watch
 devisejs: yarn build:js:devise --watch
 css: yarn build:css --watch
-devise: yarn build:css:devise --watch
+devisecss: yarn build:css:devise --watch
