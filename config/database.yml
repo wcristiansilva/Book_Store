@@ -21,8 +21,8 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   host: localhost
-  username: will
-  password: 337220
+  username: postgres
+  password: 123456
 
 development:
   <<: *default
