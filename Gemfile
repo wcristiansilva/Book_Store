@@ -98,4 +98,5 @@ group :test do
   gem 'simplecov'
   gem 'vcr'
   gem 'webdrivers'
+  gem 'webmock'
 end
