@@ -1,8 +1,15 @@
 <%= simple_form_for(resource, html: { class:'login-form'},as: resource_name, url: registration_path(resource_name)) do |f| %>
   <div class="text-center">
     <%= f.error_notification %>
+    <%= render 'devise/shared/error_messages' %>
   </div>
   <div class="form-inputs">
+    <%= f.input :name,
+                required: true,
+                autofocus: true,
+                label: false,
+                placeholder: "Nome",
+                input_html: { autocomplete: "name" }%>
     <%= f.input :email,
                 required: true,
                 autofocus: true,
@@ -20,6 +27,12 @@
                 label: false,
                 placeholder: "Password confirmation",
                 input_html: { autocomplete: "new-password" } %>
+    <%= f.input :phone,
+                required: true,
+                autofocus: true,
+                label: false,
+                placeholder: "Telefone",
+                input_html: { autocomplete: "telefone" }%>
   </div>
 
   <%= render 'devise/shared/button_submit', f: f, text: 'Cadastrar' %>
