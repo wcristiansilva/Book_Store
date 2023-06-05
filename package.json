@@ -9,6 +9,7 @@
     "bootstrap": "5.2.3",
     "bootstrap-icons": "1.10.4",
     "esbuild": "0.17.18",
+    "jquery": "^3.7.0",
     "sass": "1.62.0",
     "webpack": "4.46.0",
     "webpack-cli": "^3.3.12"
@@ -16,7 +17,8 @@
   "scripts": {
     "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds --public-path=assets",
     "build:css": "sass ./app/assets/stylesheets/application.bootstrap.scss:./app/assets/builds/application.css --no-source-map --load-path=node_modules",
-    "build:css:devise": "sass ./app/assets/stylesheets/devise.scss:./app/assets/builds/devise.css --no-source-map --load-path=node_modules"
+    "build:css:devise": "sass ./app/assets/stylesheets/devise.scss:./app/assets/builds/devise.css --no-source-map --load-path=node_modules",
+    "build:css:admin": "sass ./app/assets/stylesheets/admin.scss:./app/assets/builds/admin.css --no-source-map --load-path=node_modules"
   },
   "devDependencies": {
     "webpack-dev-server": "3"

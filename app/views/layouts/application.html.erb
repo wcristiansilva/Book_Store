@@ -10,13 +10,14 @@
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
   </head>
 
-  <body>
-    <!-- Navigation-->
-    <%= render 'layouts/store/nav'%>
-    <!--Index Home-->
-    <%= yield %>
-    
-    <!-- Footer-->
-    <%= render 'layouts/store/footer'%>
-  </body>
+<body>
+  <!-- Navigation-->
+  <%= render 'layouts/store/nav'%>
+  <!--Index Home-->
+  <%= yield %>
+  
+  <!-- Footer-->
+  <%= render 'layouts/store/footer'%>
+</body>
+
 </html>

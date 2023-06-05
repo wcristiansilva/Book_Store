@@ -1,5 +1,7 @@
 // Entry point for the build script in your package.json
 import "@hotwired/turbo-rails"
 import "./controllers"
+import "./jquery"
 import * as bootstrap from "bootstrap"
-import "./front-layout/scripts"
+import "./sbadmin/sb-admin-2.min"
+Turbo.session.drive = false
