@@ -103,6 +103,10 @@
                       <i class="fas fa-fw fa-table"></i>
                       <span>Tables</span></a>
               </li>
+              
+              <li class="nav-item">
+                  <%= button_to "Logout", destroy_user_session_path, method: :delete, class: "nav-link btn btn-default btn-sm" %>
+              </li>
 
               <!-- Divider -->
               <hr class="sidebar-divider d-none d-md-block">
