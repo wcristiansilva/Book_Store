@@ -1,0 +1,33 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Categories</h1>
+
+<table id="categories">
+  <thead>
+      <th>Nome</th>
+      <th>Posição</th>
+  </thead>
+
+  <tbody>
+
+    <% @categories.each do |category| %>
+
+    <tr>
+      <td><%=category.name%></td>
+      <td><%=category.position%></td>
+    </tr>
+
+    <%= render category %>
+      <p>
+        <%= link_to "Show this category", category %>|
+        <%=# link_to "Back to categories", admin_categories_path %>
+        <%= link_to "Edit this category", edit_category_path(@category) %>
+        <%= link_to "Destroy this category", @category, method: :delete %>
+      </p>
+    <% end %>
+
+  </tbody>
+  
+</table>
+
+<%= link_to "New category", new_admin_category_path %>
