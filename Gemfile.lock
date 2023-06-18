@@ -326,7 +326,7 @@ DEPENDENCIES
   cssbundling-rails
   database_cleaner
   debug
-  devise
+  devise (~> 4.9.2)
   dotenv-rails
   factory_bot_rails
   faker
@@ -354,7 +354,7 @@ DEPENDENCIES
   webpacker
 
 RUBY VERSION
-   ruby 3.0.5p211
+   ruby 3.1.3p185
 
 BUNDLED WITH
    2.4.13
